@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Browser History — Linked List Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="app">
+
+    <!-- Browser Bar -->
+    <div id="browser-bar">
+      <button class="nav-btn" id="back-btn" title="Back" disabled>&#8592;</button>
+      <button class="nav-btn" id="fwd-btn" title="Forward" disabled>&#8594;</button>
+      <input id="url-bar" type="text" placeholder="Type a URL and press Go..." />
+      <button id="go-btn">Go</button>
+    </div>
+
+    <!-- Page Display -->
+    <div id="page-area">
+      <div class="page-content" id="page-content">
+        <div class="page-icon">🌐</div>
+        <div class="page-title">Homepage</div>
+        <div class="page-url">home.page</div>
+      </div>
+    </div>
+
+    <!-- Linked List Visualizer -->
+    <div id="viz-area">
+      <div class="viz-label">Linked List — Live View</div>
+      <div id="nodes-row"></div>
+      <div id="history-list"></div>
+    </div>
+
+    <div id="tip">
+      Try: visit a few pages → go back → visit a new one (watch forward nodes disappear!)
+    </div>
+
+  </div>
+
+  <script src="linkedlist.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
